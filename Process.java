@@ -25,7 +25,8 @@ public class Process {
 		System.out.println(count);
 		
 		List<Student> studentList = Student.getAllStudents().stream()
-				.filter(s-> Period.between(s.getDOB(),LocalDate.now()).getYears()>18).collect(Collectors.toList());
+				.filter(s-> Period.between(s.getDOB(),LocalDate.now()).getYears()>18).
+				collect(Collectors.toList());
 		
 		System.out.println(Student.getAllStudents());
 		System.out.println(studentList);

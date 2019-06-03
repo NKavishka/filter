@@ -41,7 +41,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", marks=" + marks + "]";
+		return "[" + name + ", " + marks + "]";
 	}
 	
 	
